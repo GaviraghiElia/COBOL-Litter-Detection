@@ -38,9 +38,13 @@ Our paper is out! You can find it on <a href="https://ieeexplore.ieee.org/docume
 
 <img src="images/paper.png" width="700">
 
+We have improved the performance of YOLO models on the TACO dataset, defining a new state of the art!
+
+<img src="images/paper_performance.png" width="700> 
+<img src="images/paper_performance_graph.png" width="700>
 
 ## Features
-
+🚀 Tuning the confidence of your YOLO model! Check our paper above.
 ♻️ Introducing new dataset for multiclass litter detection: **UniMiB Trash dataset**.
 🔍 Training CNN (YOLO) for Litter Detection with TACO and PlastOPol, SOTA dataset for this task.
 
