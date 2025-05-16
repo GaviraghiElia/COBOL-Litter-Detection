@@ -10,6 +10,15 @@
 
 The goal of this project is to support environmental monitoring and urban cleanliness by automating the process of identifying various types of litter in images or videos.
 
+## My thesis in a nutshell
+
+- Explore SOTA datasets and approaches on litter detection
+- **Collect the world's first public dataset of annotated litter in the wild images**, with polygonal and multiclass masks... for real! Divided by size (5 classes), not type (it's unfeasible, actually).
+- Training YOLO v5/v8/ on TACO dataset, improving them by tuning a specific hyperparameter and publish a paper on this.
+- Mixing datasets (TACO, PlastOPol and... **ours!**) to improve performance (stay soon)
+- Develop two-stage YOLO World (unsupervised) pipeline to detect better license plate and faces *(to protect privacy people)*
+- Implement a lot of tips to improve the previous.
+
 ## News 🚀 
 
 ### UniMiB Trash Dataset 🌱
@@ -25,7 +34,7 @@ We are working on YOLO 4-Channel implementation: a CNN could see better with 3 c
 <img src = "images/depth_estimation.png" width="700">
 
 ### YOLO p2-p6 architecture on mixed dataset 🧠
-We are trying to combine UniMiB, TACO and PlastOPol to train from scratch a YOLO architecture similar to YOLO v5.6u, which used the p6 block in the backbone to identify large objects: we want to catch cigarettes too!
+We are trying to combine UniMiB, <a href="http://tacodataset.org/">TACO dataset</a> and <a href="https://research.wur.nl/en/datasets/plastopol-a-dataset-for-litter-detection">PlastOPol</a> to train from scratch a YOLO architecture similar to YOLO v5.6u, which used the p6 block in the backbone to identify large objects: we want to catch cigarettes too!
 
 ### YOLO hyperparameter tuning
 We recorded increases of over 5% in terms of mAP50 on the same datasets as in the paper. 
@@ -35,13 +44,13 @@ p.s. *Try enabling the cosine scheduler. It may improve significantly*
 ## Paper
 
 Our paper is out! You can find it on <a href="https://ieeexplore.ieee.org/document/10761805">**IEEE Xplore**</a>
+We improved the performance of YOLO models on the <a href="http://tacodataset.org/">TACO dataset</a>, defining a **new state of the art**!
 
 <img src="images/paper.png" width="700">
 
-We have improved the performance of YOLO models on the TACO dataset, defining a new state of the art!
 
-<img src="images/paper_performance.png" width="700> 
-<img src="images/paper_performance_graph.png" width="700>
+<img src="images/paper_performance.png" width="700"> 
+<img src="images/paper_performance_graph.png" width="700">
 
 ## Features
 🚀 Tuning the confidence of your YOLO model! Check our paper above.
